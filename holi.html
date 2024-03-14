@@ -1,1 +1,44 @@
-lalalala
+
+<html>
+<head>
+</head>
+<body>
+
+<script>
+    function Calculo(Base, Altura) {
+        var area = (Base * Altura) / 2;
+        return area;
+    }
+
+    //JSON
+    const Triangulos = [
+        {
+            "Base": 5,
+            "Altura": 7
+        },
+        {
+            "Base": 8,
+            "Altura": 10
+        },
+        {
+            "Base": 3,
+            "Altura": 4
+        },
+        {
+            "Base": 6,
+            "Altura": 9
+        },
+        {
+            "Base": 12,
+            "Altura": 15
+        }
+    ];
+
+    Triangulos.forEach((triangulo, index) => {
+        var area = Calculo(triangulo.Base, triangulo.Altura);
+        console.log("Área del triángulo " + (index + 1) + ": " + area);
+    });
+</script>
+
+</body>
+</html>
